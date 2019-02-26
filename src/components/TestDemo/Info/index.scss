@@ -1,0 +1,26 @@
+
+.info-wrap {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 24px;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+}
+
+.info-title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.info-content {
+  padding: 15px;
+}
+
+.info-tip {
+  padding: 15px;
+}

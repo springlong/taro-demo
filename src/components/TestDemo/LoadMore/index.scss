@@ -1,0 +1,17 @@
+.loadmore-wrap {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text {
+    font-size: 30px;
+    color: #999;
+    margin-left: 10px;
+  }
+
+  image {
+    width: 30px;
+    height: 30px;
+  }
+}
