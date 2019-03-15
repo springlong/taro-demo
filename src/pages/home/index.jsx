@@ -401,7 +401,7 @@ class Home extends Component {
         <View className='module-title'>组件循环方式</View>
         {
           list.map(item => {
-            return (<Info data={item} showTip />)
+            return (<Info data={item} key={item.title} showTip />)
           })
         }
 
