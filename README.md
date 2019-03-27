@@ -258,3 +258,8 @@ class Dialog extends Component {
 - Taro 不支持在 `render()` 之外的地方定义 jsx 内容（[参见说明](https://github.com/NervJS/taro/blob/master/packages/eslint-plugin-taro/docs/no-jsx-in-class-method.md)）。
 
 所以到了 Taro 这里，我们就只剩下组件的方式来拆分页面模块了。
+
+
+### 自定义组件遍历jsx打包编译时在抽离函数和对象时有问题
+
+Taro在执行jsx的map遍历时，会将循环体中的函数和对象抽离到遍历item中，在已知的V1.2.14~V1.2.20版本中，如果是在自定义组件中会编译错误，而在页面文件中则编译正常。

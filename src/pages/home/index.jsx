@@ -172,7 +172,7 @@ class Home extends Component {
 
   // 跳转至详情页（覆盖当前记录）
   handleRedirectToDetail = () => {
-    Taro.redirectTo({ url: `/pages/detail/index?id=10099&from=home` })
+    Taro.redirectTo({ url: '/pages/detail/index?id=10099&from=home' })
   }
 
   // 触发子组件定义的events
@@ -265,15 +265,15 @@ class Home extends Component {
   // 显示操作菜单
   handleShowActionSheet = () => {
     const actionList = [
-      {name: 'scan', label: '扫一扫'},
-      {name: 'shake', label: '摇一摇'},
-      {name: 'look', label: '看一看'},
+      { name: 'scan', label: '扫一扫' },
+      { name: 'shake', label: '摇一摇' },
+      { name: 'look', label: '看一看' },
     ]
 
     Taro.showActionSheet({
-      //按钮的文字数组，数组长度最大为6个
+      // 按钮的文字数组，数组长度最大为6个
       itemList: actionList.map((item) => item.label),
-      //按钮的文字颜色
+      // 按钮的文字颜色
       itemColor: '#000000',
       // 选择操作项时的回调函数
       success(res) {
@@ -312,8 +312,8 @@ class Home extends Component {
   }
 
   // 渲染内容
-  render () {
-    const {pageDone, pageData, userInfo, currentPageName, list, isShowMore} = this.state
+  render() {
+    const { pageDone, pageData, userInfo, currentPageName, list, isShowMore } = this.state
 
     return (
       <View className='container'>
@@ -362,7 +362,7 @@ class Home extends Component {
                 <View>{pageData.desc}</View>
               </View>
             </Panel>
-          ): null
+          ) : null
         }
         <Panel
           title='介绍'

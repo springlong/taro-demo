@@ -23,43 +23,43 @@ class App extends Component {
 
   // APP生命周期：程序被载入触发
   // 微信小程序对应周期：onLaunch
-  componentWillMount () {
+  componentWillMount() {
     console.log('App componentWillMount')
   }
 
   // APP生命周期：程序被载入触发，在 componentWillMount 后执行
   // 微信小程序对应周期：onLaunch
-  componentDidMount () {
+  componentDidMount() {
     console.log('App componentDidMount')
   }
 
   // APP生命周期：程序可见时触发
   // 微信小程序对应周期：onShow
-  componentDidShow () {
+  componentDidShow() {
     console.log('App componentDidShow')
   }
 
   // APP生命周期：程序隐藏时触发
   // 微信小程序对应周期：onHide
-  componentDidHide () {
+  componentDidHide() {
     console.log('App componentDidHide')
   }
 
   // APP生命周期：程序执行错误时触发
   // 微信小程序对应周期：onError
-  componentCatchError () {
+  componentCatchError() {
     console.log('App componentCatchError')
   }
 
   // APP生命周期：页面不存在时触发
   // 微信小程序对应周期：onPageNotFound
-  componentDidNotFound () {
+  componentDidNotFound() {
     console.log('App componentDidNotFound')
   }
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
       <Provider>
         <Home />

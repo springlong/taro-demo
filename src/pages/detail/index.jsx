@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text, Navigator } from '@tarojs/components'
+import { View, Navigator } from '@tarojs/components'
 import Actions from '../../actions/actions'
 import './index.scss'
 
@@ -51,32 +51,32 @@ class Detail extends Component {
     }
   }
 
-  render () {
-    const {pageDone, pageData} = this.state
+  render() {
+    const { pageDone, pageData } = this.state
 
     return (
-      <View class="container">
+      <View class='container'>
         {
           pageDone ? (
-            <View class="page-done">
-              <View class="group-wrap">
-                <View class="row">{pageData.title}</View>
-                <View class="row">{pageData.content}</View>
+            <View class='page-done'>
+              <View class='group-wrap'>
+                <View class='row'>{pageData.title}</View>
+                <View class='row'>{pageData.content}</View>
               </View>
-              <View class="group-wrap">
-                <View class="row">
-                  <Navigator url="/pages/home/index">navigate 返回首页</Navigator>
+              <View class='group-wrap'>
+                <View class='row'>
+                  <Navigator url='/pages/home/index'>navigate 返回首页</Navigator>
                 </View>
-                <View class="row">
-                  <Navigator url="/pages/home/index" open-type="redirect">redirect 返回首页</Navigator>
+                <View class='row'>
+                  <Navigator url='/pages/home/index' open-type='redirect'>redirect 返回首页</Navigator>
                 </View>
-                <View class="row">
-                  <Navigator url="/pages/home/index" open-type="navigateBack">navigateBack 返回首页</Navigator>
+                <View class='row'>
+                  <Navigator url='/pages/home/index' open-type='navigateBack'>navigateBack 返回首页</Navigator>
                 </View>
               </View>
             </View>
           ) : (
-            <View class="page-loading">数据加载中...</View>
+            <View class='page-loading'>数据加载中...</View>
           )
         }
       </View>
