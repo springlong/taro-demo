@@ -26,6 +26,11 @@ module.exports = {
         'balanced': true,
       }
     }],
+    'operator-assignment': ['error', 'always'],
+    'prefer-const': ['error', {
+      destructuring: 'any',
+      ignoreReadBeforeAssign: true,
+    }],
     'space-unary-ops': "error",
     'object-curly-newline': ['warn', {
       'multiline': true,
@@ -49,7 +54,19 @@ module.exports = {
       'named': 'never',
       'asyncArrow': 'always'
     }],
+    'react/jsx-wrap-multilines': ['warn', {
+      declaration: "parens-new-line",
+      assignment: "parens-new-line",
+      return: "parens-new-line",
+      arrow: "parens-new-line",
+      condition: "parens-new-line",
+      logical: "parens-new-line",
+      prop: "parens-new-line",
+    }],
+    'arrow-parens': ['warn', 'always'],
     'comma-dangle': 0,
+    'prefer-template': 'warn',
+    'no-else-return': 'error',
     'comma-spacing': ["error", { "before": false, "after": true }],
     'operator-linebreak': ["error", "before"],
     'comma-style': ["error", "last"],
