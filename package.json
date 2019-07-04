@@ -64,7 +64,7 @@
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-taro": "1.2.10",
     "http": "^0.0.0",
-    "open": "^0.0.5",
+    "open": "^6.0.0",
     "query-string": "^6.2.0",
     "shelljs": "^0.8.3",
     "url": "^0.11.0"
